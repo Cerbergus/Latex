@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.5.24)  7 SEP 2026 22:56
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.5.24)  7 SEP 2026 23:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2021,23 +2021,17 @@ L3 programming layer <2022/08/05>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-Package rerunfilecheck Warning: File `DG_note_main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `DG_note_main.out':
-(rerunfilecheck)             Before: 49FB1B3B9FC9FBD93DB3DB769783F41D;251
-(rerunfilecheck)             After:  5F180524037F5B5E364780983373149C;573.
+Package rerunfilecheck Info: File `DG_note_main.out' has not changed.
+(rerunfilecheck)             Checksum: 5F180524037F5B5E364780983373149C;573.
 Package logreq Info: Writing requests to 'DG_note_main.run.xml'.
 \openout1 = `DG_note_main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 47984 strings out of 468839
- 999169 string characters out of 5444791
- 2005654 words of memory out of 5000000
- 76029 multiletter control sequences out of 15000+600000
+ 47986 strings out of 468839
+ 999198 string characters out of 5444791
+ 2005999 words of memory out of 5000000
+ 76031 multiletter control sequences out of 15000+600000
  644283 words of font info for 122 fonts, out of 8000000 for 9000
  642 hyphenation exceptions out of 8191
  103i,11n,136p,1197b,1338s stack positions out of 10000i,1000n,20000p,200000b,200000s
