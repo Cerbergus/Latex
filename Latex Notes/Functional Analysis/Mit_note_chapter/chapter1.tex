@@ -1,0 +1,87 @@
+\chapter{Normed Spaces}
+
+
+\begin{definition}
+A V-S $V$ is a \textbf{infinite-dimensional} if every linearly independent set is a finite set. I.e, for all sets $E \subseteq V$ s.t \[\sum_{i=1}^{N}a_i v_i = 0 \quad \forall v_1 , \dots v_N \in E, \] 
+E has finite cardinality. $V$ is \textbf{finite-dimensional} if it is not infinite-dimensional.
+\end{definition}
+
+\begin{example}
+
+    $C([0,1])$ is infinite-dimensional. Consider the set $E = \{f_n(x) = x^n : n \in \mathbb{Z}_{\geq 0}\}$. This set is linearly independent and has infinite cardinality.
+
+\end{example}
+
+\begin{definition}
+    Let $X$ be a metric space. The vector space $C_\infty(X)$ is defined as \[C_\infty(X) = \{f : X \to \mathbb{C} : f \text{ is continuous and bounded}\}\]
+\end{definition}
+
+It is obvious to see that $C_\infty([0,1])$ is $C([0,1])$, becuz all conts functions on [0,1] are bounded.
+
+\begin{proposition}
+    For any metric space X, we define a norm on the vector space $C_\infty(X)$ as \[\|u\|_\infty = \sup_{x \in X} |u(x)|\]
+\end{proposition}
+
+Proof: First checking the norm. For triangle inequality, if $u,v \in C_\infty(X)$, then $\forall x \in X$, we have \[|u(x) + v(x)| \leq |u(x)| + |v(x)|\] Taking the supremum over $x \in X$, we get $$\|u + v\|_\infty \leq \|u\|_\infty + \|v\|_\infty$$ and then we imposed supremum over both sides.
+
+
+\begin{definition}
+    The $\ell^p$ space is the space of (infinite) sequences \[\ell^p = \{\{a_j\}_{j=1}^\infty : ||a||_p < \infty\}\]
+    where we define the $\ell^p$ norm \[||a||_p = \begin{cases}
+        (\sum_{j=1}^\infty |a_j|^p)^{1/p}, & 1 \leq p < \infty \\
+        \sup_{j \geq 1} |a_j|, & p = \infty .\end{cases}\]
+\end{definition}
+
+\begin{definition}
+    A normed space is \textbf{Banach  space} if it is complete w.r.t the metric induced by the norm. I.e, every Cauchy sequence converges in the space.
+\end{definition}
+
+\begin{example}
+    $\forall n \in \mathbb{Z}_{\geq 0}$, $\mathbb{R}^n$ and $\mathbb{C}^n$ are complete w.r.t any of the $||\cdot||_p$ norms.
+\end{example}
+
+\begin{theorem}
+For any metric space X, the space of bounded continuous fnc on X is complete, thus $C_\infty(X)$ is a Banach space.
+\end{theorem}
+
+Proof: 
+
+\begin{definition}
+    Let $\{v_n\}_{n=1}^{\infty}$ be a seqn of points in V. Then the series $\sum_{n} v_n$ is \textbf{summable} if $\{\sum_{n=1}^{m} v_n\}_{m=1}^{\infty}$ converges, and 
+    
+    \textbf{absolutely summable} if it same statement hold with $||v_n||$.
+\end{definition}
+
+\begin{proposition}
+    if $\sum_n v_n$ is absolutely summable, then the sequence of partial sum $\{\sum_{n=1}^{m}v_n\}_{m=1}^{\infty}$ is Cauchy.
+\end{proposition}
+
+\begin{theorem}
+A normed vector space V is Banach i.f.f every abs summable series is summable.
+\end{theorem}
+
+Proof:
+
+
+
+
+\begin{example}
+Let $ K:[0,1]x[0,1] \to \mathbb{C}$ be a continuous function. Then for any func $f \in C([0,1])$. we define \[Tf(x) = \int_{0}^{1} K(x,y)f(y)dy\] The map $T$ is basically the inverse operators of differentyial operators.
+\end{example}
+
+
+\begin{definition}[Linear Operator]
+Let $V$ \& $W$ be two V-S. A map T: V $\to$ W is \textbf{linear} if for all $\lambda_1, \lambda_2 \in \mathbb{K}$ and $v_1, v_2 \in V$, we have \[T(\lambda_1 v_1 + \lambda_2 v_2) = \lambda_1 T(v_1) + \lambda_2 T(v_2)\]
+\end{definition}
+
+\boxed{Note}: 
+
+All linear transformation are continous in finite-dimensional V-S. But this is not the case for infinite-dimensional V-S. Consider X to be n-dimensional V-S with basis $\{e_1, e_2, \dots, e_n\}$. Let vector $x\in X$ be represented as a linear combination of the basis vectors, 
+
+Apply linearity: \[T(x) = T\left(\sum_{i=1}^n x_i e_i\right) = \sum_{i=1}^n x_i T(e_i)\]
+
+Applying $\Delta$-inequality \& taking the norm in Y: \[||T(x)||_Y = ||\sum_{i=1}^n x_i T(e_i)||_Y \leq \sum_{i=1}^n |x_i| ||T(e_i)||_Y\]%
+
+Due to the equivalence of norms in finite-dimensional V-S, norm on X are equivalent with $\ell^1$ norm, $\|x\|_1 = \sum_{i=1}^{n} |x_i|$ Thus we have \[||T(x)||_Y \leq C \|x\|_X\] for some constant C. This shows that T is continuous.
+
+To bound the operator let $M = \max_{1 \leq i \leq n} ||T(e_i)||_Y$. Then we have \[||T(x)||_Y \leq \sum_{i=1}^n |x_i| ||T(e_i)||_Y \leq M \sum_{i=1}^n |x_i| = M \|x\|_1\]

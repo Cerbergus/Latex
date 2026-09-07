@@ -1,0 +1,80 @@
+\documentclass[lang=cn,newtx,11pt,scheme=chinese]{elegantbook}
+
+\title{Probability Theory}
+\subtitle{Latex Notes}
+
+\author{YuChen Huang}
+\institute{Self Study}
+\date{\today}
+\version{0.1}
+\bioinfo{联系}{0874103232qq.com@gmail.com}
+
+
+
+\extrainfo{\textcolor{red}{\bfseries 注意：本模板自2023年1月1日起停止维护。然而，鉴于用户群体庞大，自2026年起恢复维护并重新发布。}}
+
+\setcounter{tocdepth}{3}
+
+
+ \cover{"c:/Users/Loz20/Desktop/Type Notes/Latex/Latex Notes/Probability Theory/qwq.png"}
+
+% 本文档命令
+\usepackage{array}
+\newcommand{\ccr}[1]{\makecell{{\color{#1}\rule{1cm}{1cm}}}}
+
+% 修改标题页的橙色带
+\definecolor{customcolor}{RGB}{32,178,170}
+\colorlet{coverlinecolor}{customcolor}
+\usepackage{cprotect}
+
+\begin{document}
+
+\maketitle
+\frontmatter
+
+\tableofcontents
+
+\mainmatter
+\chapter{Preface}
+This note aim to be overall cover through of the textbook of $\textbf{Rick Durrett's "Probability: Theory and Examples"}$. As well as a practice run of the $\textbf{LaTex}$ under a new template.
+
+A pre-requisite of this note is that the reader should have a basic knowledge of measure theory, probability theory. Which I highly recommend the reader to read over MIRA by $\textbf{Sheldon Axler}$ and intro to probability by $\textbf{Rick Durrett}$.
+
+To whoever who used my note and endedup scoring higher than me in the exam, I would like to say fk you. 
+
+August 2025
+
+UCD
+
+\chapter{测度论}
+
+
+\section{Lebesgue 测度}
+\subsection{Lebesgue 测度的定义}
+Lebesgue 测度是现代测度论的核心概念之一，它扩展了传统的长度、面积和体积的概念，使得我们能够对更广泛的集合进行测量。Lebesgue 测度的定义基于外测度的概念，通过对集合进行覆盖和取 infimum 来定义其测度。
+\begin{definition}[Lebesgue 外测度]
+    Lebesgue measure is a measure on $(\mathbb{R}, \mathcal{B})$, that assigns to each Borel set its outer measure, which is defined as the infimum of the lengths of open intervals that cover the set.
+\end{definition}
+
+\begin{lemma}{Approximation of Borel sets from above by closed sets}
+    For any Borel set $B \subseteq \mathbb{R}$ and any $\epsilon > 0$, there exists a closed set $F \subseteq B$ such that $\mu(B \setminus F) < \epsilon$. 
+    
+\end{lemma}
+这里开始正文。
+\chapter{大数定理}
+z
+\chapter{中心化定理}
+z
+\chapter{Martingales}
+z
+\chapter{马科夫链}
+zz
+\chapter{Browian Motion}
+z
+\chapter{Random Walk 应用}
+z
+\chapter{多维Browian 运动}
+
+\chapter{补充：测度论}
+
+\end{document}

@@ -1,0 +1,45 @@
+\chapter{Introduction to Smooth Manifolds }
+
+\subsection{Introduction}
+\begin{definition}
+    A smooth n-dimensional manifold $M^{n}$ is a Hausdorff, 2nd countable topological space with an \textbf{(equivalence class of)} open cover $\{U_\alpha\}_{ \alpha \in \mathbb{A}}$ \& homeomorphism $\phi_\alpha : U_\alpha \to \phi_\alpha(U_\alpha) \subset \mathbb{R}^n (\forall \alpha \in \mathbb{A})$ s.t the \textbf{transition maps} 
+    \[
+    \phi_\beta \circ \phi_\alpha^{-1}: \phi_\alpha(U_\alpha \cap U_\beta) \to \phi_\beta(U_\alpha \cap U_\beta) 
+    \]
+    are smooth ($C^\infty$) for all $\alpha, \beta \in \mathbb{A}$.
+
+    Each pair $(U_\alpha, \phi_\alpha)$ is called a \textbf{(smooth)chart}, and the collection $\{(U_\alpha, \phi_\alpha)\}_{\alpha \in \mathbb{A}}$ is called an \textbf{atlas} of $M^n$.
+
+\end{definition}
+A good analogy is to think each chart as a map of the region of manifold which behave in Euclidean fashion. Where the collection of charts (atlas) forms the globe that covers the entire manifold. Where the overlap between two map acts extremely smooth.
+
+\begin{remark}
+    Note often we write $\phi = \vec{x} = (x^1, x^2, \dots, x^n): U \to \mathbb{R}^n$ to denote the coordinates of a point in the chart. Where $\vec{x}$ are called the \textbf{local coordinate} of the chart \& $x^i$s are real values function. There isn't a canical expression for all coordinate of point $p \in M$ as it depends on the chart U!
+\end{remark}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{C:/Users/Loz20/Pictures/Screenshots/transition_map.png}
+    \caption{Transition Map between two charts}
+    \label{fig:transition_map}
+\end{figure}
+
+\begin{remark}
+    From Exercise 1.5: Any open subset of a smooth manifold, equipped with the subspace topology, is itself a smooth manifold. Namely the open \textbf{Submanifold}
+\end{remark}
+
+\begin{definition}
+    Let $M,N$ be smooth manifolds. A continuous function $f: M \to N$ is \textbf{smooth} if, for all charts $(U,\phi)$ of $M$ and $(V,\psi)$ of $N$, the map 
+    \[
+    \psi \circ f \circ \phi^{-1}: \phi(U \cap f^{-1}(V)) \to \psi(V) \tag{1.1}
+    \]
+    is smooth.
+    We denote
+    \[C^{\infty}(M,N) \doteq \{f:M \to N | \quad f \text{ is smooth}\},\] 
+    \&  
+    \[C^{\infty}(M) \doteq C^{\infty}(M,\mathbb{R}).\]
+\end{definition}
+
+Note the function in (1.1) is a map betwen open subset of $\mathbb{R}^n$, so from multivariable calculus this is indeed smooth.
+
+\subsection{Tangent Spaces}

@@ -1,0 +1,13 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/c:\\Users\\Loz20\\Desktop\\数学\\Latex\\trial.aux": true,
+        "**/c:\\Users\\Loz20\\Desktop\\数学\\Latex\\trial.log": true,
+        "**/c:\\Users\\Loz20\\Desktop\\数学\\Latex\\trial.gz": true,
+        "**/c:\\Users\\Loz20\\Desktop\\数学\\Latex\\trial.out": true
+    }
+}
